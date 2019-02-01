@@ -1,7 +1,7 @@
 ######################################################################
 # Author: Begum Topcuoglu
 # Date: 2018-12-20
-# Title: Main pipeline for 7 classifiers in R programming language
+# Title: Main pipeline in R programming language
 ######################################################################
 
 ######################################################################
@@ -13,12 +13,7 @@
 
 
 # It will run the following machine learning pipelines:
-#     - L2 Logistic Regression 
-#     - L1 and L2 Linear SVM
-#     - RBF SVM
-#     - Decision Tree
-#     - Random Forest 
-#     - XGBoost 
+#   Random Forest
 ######################################################################
 
 ######################################################################
