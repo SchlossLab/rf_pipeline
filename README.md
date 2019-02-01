@@ -5,3 +5,8 @@
 3. You need to load R/3.5.0 and r-biomed-libs/3.5.0 libraries
 
 ```qsub random_forest.pbs```
+
+# Cat files that are generated for each data-split (each run by arrayID)
+
+You will use the ```cat_files.sh``` for this. 
+
