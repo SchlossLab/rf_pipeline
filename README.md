@@ -6,6 +6,8 @@
 
 ```qsub random_forest.pbs```
 
+```random_forest.pbs``` runs the ```code/learning/main_RF.R``` file.
+
 # Cat files that are generated for each data-split (each run by arrayID)
 
 You will use the ```cat_files.sh``` for this. 
