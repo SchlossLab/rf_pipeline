@@ -8,6 +8,7 @@
 
 - ```random_forest.pbs``` runs the ```code/learning/main_RF.R``` file. 
 - ```main_RF.R``` file uses functions that are also in ```code/learning``` directory.
+- You'll need to change the data that ```main_RF.R``` uses.
 
 # Cat files that are generated for each data-split (each run by arrayID)
 
