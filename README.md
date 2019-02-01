@@ -6,7 +6,8 @@
 
 ```qsub random_forest.pbs```
 
-```random_forest.pbs``` runs the ```code/learning/main_RF.R``` file.
+- ```random_forest.pbs``` runs the ```code/learning/main_RF.R``` file. 
+- ```main_RF.R``` file uses functions that are also in ```code/learning``` directory.
 
 # Cat files that are generated for each data-split (each run by arrayID)
 
