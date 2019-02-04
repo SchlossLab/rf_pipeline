@@ -35,11 +35,11 @@ for (dep in deps){
 ######################################################################
 #------------------------- DEFINE FUNCTION -------------------#
 ######################################################################
-get_AUCs <- function(models, split_number){
+get_AUCs <- function(dataset, models, split_number){
   for(ml in models){
     
     # Save results of the modeling pipeline as a list
-    results <- pipeline(data, ml) 
+    results <- pipeline(dataset, data, ml) 
     
     # ------------------------------------------------------------------ 
     # Create a matrix with cv_aucs and test_aucs from 100 data splits
