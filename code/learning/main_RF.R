@@ -79,7 +79,7 @@ seed <- as.numeric(input[1])
 model <- input[2]
 
 set.seed(seed)
-get_AUCs(model, input[1])
+get_AUCs(data, model, input[1])
 
 # Usage in command-line:
 #   Rscript code/main_RF.R $seed "Random_Forest"
