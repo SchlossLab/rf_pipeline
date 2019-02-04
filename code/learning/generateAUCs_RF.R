@@ -39,7 +39,7 @@ get_AUCs <- function(dataset, models, split_number){
   for(ml in models){
     
     # Save results of the modeling pipeline as a list
-    results <- pipeline(dataset, data, ml) 
+    results <- pipeline(dataset, ml) 
     
     # ------------------------------------------------------------------ 
     # Create a matrix with cv_aucs and test_aucs from 100 data splits
