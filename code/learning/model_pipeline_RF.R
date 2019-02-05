@@ -22,8 +22,8 @@
 
 # Output:
 #  List of:
-#     1. AUCs  for cv of 100 data-splits
-#     2. AUCS for test of 100 data-splits
+#     1. meanAUC for cv after 100 internal repeat
+#     2. AUC for test of 1 data-split
 ######################################################################
 
 ######################################################################
