@@ -1,7 +1,7 @@
 ######################################################################
 # Author: Begum Topcuoglu
 # Date: 2019-01-15
-# Title: Generate files that has cv and test AUCs for100 data-split 
+# Title: Generate files that has cv and test AUCs for 1 data-split 
 ######################################################################
 
 ######################################################################
@@ -16,8 +16,8 @@
 
 # The output:
 #  A results .csv file with:
-#     1. AUCs  for cv of 100 data-splits
-#     2. AUCS for test of 100 data-splits
+#     1. AUCs  for cv of 1 data-split
+#     2. AUCS for test of 1 data-split
 ######################################################################
 
 ######################################################################
