@@ -33,8 +33,8 @@ tuning_grid <- function(model){
   
   # Cross-validation method
   cv <- trainControl(method="repeatedcv",
-                     repeats = 100,
-                     number=5,
+                     repeats = 100, # repeat internally and give us meanAUC for each hyper-parameter
+                     number=5, # 5fold cross-validation
                      returnResamp="final",
                      classProbs=TRUE,
                      summaryFunction=twoClassSummary,
