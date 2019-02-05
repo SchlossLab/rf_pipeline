@@ -14,6 +14,8 @@ do
         mv $SEARCH_DIR/combined_best_hp_results_"$model".csv $FINAL_DIR/combined_best_hp_results_"$model".csv
 done
 
+# Might be good to add a check here before deleting everything.
+# ex: check if the line number is 101 for best_hp_*
 rm $SEARCH_DIR/all_hp_*
 rm $SEARCH_DIR/best_hp_*
 
