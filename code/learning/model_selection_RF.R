@@ -42,8 +42,8 @@ tuning_grid <- function(n_features, model){
                      savePredictions = TRUE)
   # Grid and caret method defined for random forest classification model
   if(model=="Random_Forest"){
-      if(n_features > 1000) {powers <- 5^(0:10)}
-      else if(n_features > 30) {powers <- 4^(0:10)}
+      if(n_features > 1000) {powers <- 4^(0:10)}
+      else if(n_features > 30) {powers <- 3^(0:10)}
       else if(n_features > 15) {powers <- 2^(0:10)}
       else if(n_features > 7) { powers <- seq(1, 15, by=2)}
       else {powers <- 1:7}
