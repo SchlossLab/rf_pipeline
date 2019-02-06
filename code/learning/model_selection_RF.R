@@ -9,8 +9,8 @@
 ######################################################################
 
 ######################################################################
-# Dependencies and Outputs: 
-#    Filename to put to function: 
+# Dependencies and Outputs:
+#    Filename to put to function:
 #     "Random_Forest"
 
 
@@ -29,8 +29,8 @@
 ######################################################################
 #------------------------- DEFINE FUNCTION -------------------#
 ######################################################################
-tuning_grid <- function(model){
-  
+tuning_grid <- function(n_features, model){
+
   # Cross-validation method
   cv <- trainControl(method="repeatedcv",
                      repeats = 100, # repeat internally and give us meanAUC for each hyper-parameter
@@ -42,13 +42,20 @@ tuning_grid <- function(model){
                      savePredictions = TRUE)
   # Grid and caret method defined for random forest classification model
   if(model=="Random_Forest"){
-    grid <-  expand.grid(mtry = c(80,500,1000,1500))
+      if(n_features > 1000) {powers <- 5^(0:10)}
+      else if(n_features > 30) {powers <- 4^(0:10)}
+      else if(n_features > 15) {powers <- 2^(0:10)}
+      else if(n_features > 7) { powers <- seq(1, 15, by=2)}
+      else {powers <- 1:7}
+
+      powers <- powers[powers <= n_features]
+      grid <-  expand.grid(mtry = powers)
+
     method = "rf"
   }
-  else { 
+  else {
     print("Model not available")
   }
   params <- list(grid, method, cv)
   return(params)
 }
-
